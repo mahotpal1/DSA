@@ -42,6 +42,6 @@ int main(){
   ReverseArray ra1 = ReverseArray(v1);
   ra1.display();
   ra1.reverse();
-  std::cout << "After Reverse, " <<;
+  std::cout << "After Reverse, ";
   ra1.display();
 }
