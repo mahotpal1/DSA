@@ -20,7 +20,6 @@ bool QUEUE::isFull(){
 
 bool QUEUE::isEmpty(){
   if(front=rear=-1){
-    std::cout << "QUEUE is Empty!!" << std::endl;
     return true;
   }
   return false;
@@ -31,16 +30,17 @@ void QUEUE::ENQUEUE(int key){
   if(isFull()){
     std::cout << "Queue is FULL!!" << std::endl;
   }
-  std::cout << "Check 2" << std::endl;
   if(isEmpty()){
+    std::cout << "Queue is Empty!!" << std::endl;
     front++;
     rear++;
-    std::cout << "Check1 " << std::endl;
     queue.push_back(key);
+    std::cout << key << " Added Successfully!! " << std::endl;
   }
   else{
     rear++;
     queue.push_back(key);
+    std::cout << key << " Added SuccessFully!! " << std::endl;
    }
   }
 
